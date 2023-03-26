@@ -132,8 +132,8 @@ function main() {
       {
         name: "Portfolio",
         img: "./images/Portfolio.PNG",
-        linkLive: "",
-        linkCode: "",
+        linkLive: "https://portfolio-hoangak47.vercel.app/",
+        linkCode: "https://github.com/hoangak47/Portfolio",
         teamSize: 1,
         technologies: " HTML/CSS/JS",
         function: " Responsive, Animation,..",
@@ -157,7 +157,9 @@ function main() {
         ${
           project.teamSize || project.technologies || project.function
             ? `<div class="project-item__description jost">
-        <h3 class="project-type">Personal project</h3>
+        <h3 class="project-type">${
+          project.teamSize > 1 ? "Team Project" : "Personal project"
+        }</h3>
         ${
           project.teamSize
             ? `<h5><span>- Team Size:</span> ${project.teamSize}</h5>`
