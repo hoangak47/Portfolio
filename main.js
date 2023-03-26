@@ -131,7 +131,7 @@ function main() {
       },
       {
         name: "Portfolio",
-        img: "./images/portfolio.PNG",
+        img: "./images/Portfolio.PNG",
         linkLive: "",
         linkCode: "",
         teamSize: 1,
