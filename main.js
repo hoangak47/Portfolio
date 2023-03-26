@@ -33,7 +33,7 @@ function main() {
     const home = $("#home");
     const about = $("#about");
     const skills = $("#skill");
-    // const projects = $("#project");
+    const projects = $("#my-works");
     // const contact = $("#contact");
 
     document.addEventListener("scroll", () => {
@@ -54,6 +54,11 @@ function main() {
         });
         nav[2].classList.add("active");
         delayItem();
+      } else if (window.scrollY < projects.offsetTop) {
+        nav.forEach((item) => {
+          item.classList.remove("active");
+        });
+        nav[3].classList.add("active");
       }
     });
 
@@ -160,16 +165,19 @@ function main() {
         <h3 class="project-type">${
           project.teamSize > 1 ? "Team Project" : "Personal project"
         }</h3>
+        <br>
         ${
           project.teamSize
             ? `<h5><span>- Team Size:</span> ${project.teamSize}</h5>`
             : ``
         }
+        <br>
         ${
           project.technologies
             ? `<h5><span>- Technologies:</span> ${project.technologies}</h5>`
             : ``
         }
+        <br>
         ${
           project.function
             ? `
