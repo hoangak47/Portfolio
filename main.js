@@ -229,6 +229,69 @@ function main() {
     });
   }
   loadImg404();
+
+  function sendEmail() {
+    const btn = $(".contact__form-btn");
+    const input = $$(".contact__form-input");
+    const textarea = $(".contact__form-group textarea");
+
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const name = input[0].value;
+      const email = input[1].value;
+      const subject = input[2].value;
+      const message = textarea.value;
+
+      const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!email.match(pattern)) {
+        createToast("error");
+        return false;
+      }
+
+      if (name && email && subject && message) {
+        Email.send({
+          SecureToken: "76e2e51e-2190-4bdf-b588-b54d3e5df762",
+          To: "dinhnv391@gmail.com",
+          From: "nguyenhoang41911@gmail.com",
+          Subject: subject,
+          Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}`,
+        }).then(createToast("success"));
+      }
+    });
+
+    const toasts = {
+      success: {
+        icon: '<ion-icon name="checkmark-circle-outline"></ion-icon>',
+        msg: "Gửi thành công!",
+      },
+      error: {
+        icon: '<ion-icon name="alert-circle-outline"></ion-icon>',
+        msg: "Vui lòng kiểm tra thông tin !",
+      },
+    };
+
+    function createToast(status) {
+      let toast = document.createElement("div");
+      toast.className = `toast ${status}`;
+
+      toast.innerHTML = `
+        ${toasts[status].icon}
+        <span class="msg">${toasts[status].msg}</span>
+        <span class="countdown"></span>
+        `;
+      document.querySelector("#toasts").appendChild(toast);
+
+      setTimeout(() => {
+        toast.style.animation = "hide_slide 1s ease forwards";
+      }, 4000);
+      setTimeout(() => {
+        toast.remove();
+      }, 6000);
+    }
+  }
+
+  sendEmail();
 }
 
 main();

@@ -18,6 +18,9 @@
 
 <body>
 
+
+    <div id="toasts"></div>
+
     <header class="header">
         <nav>
             <a href="#" class="logo">
@@ -42,7 +45,7 @@
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#skill">SKILLS</a></li>
                     <li><a href="#my-works">MY WORK</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
@@ -148,6 +151,74 @@
         </div>
     </section>
 
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="content">
+                <h2 class="space-mono contact__title--content ">i want to hear from you</h2>
+                <h1 class="jost contact__title ">contact me</h1>
+
+                <div class="contact__content">
+                    <div class="contact__content-info">
+                        <div class=" contact__content-info-detail">
+                            <div class="contact__icon phone">
+                                <ion-icon name="call-outline" class=""></ion-icon>
+                            </div>
+                            <div class="contact__info">
+                                <h3 class="contact__info-title jost">Call me:</h3>
+                                <a class="space-mono" href="tel:+84 962 753 060">+84 962 753 060</a>
+                            </div>
+                        </div>
+                        <div class=" contact__content-info-detail">
+                            <div class="contact__icon email">
+                                <ion-icon name="mail-outline" class=""></ion-icon>
+                            </div>
+                            <div class="contact__info">
+                                <h3 class="contact__info-title jost ">Email me:</h3>
+                                <a class="space-mono"
+                                    href="mailto:nguyenhoang41911@gmail.com">nguyenhoang41911@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class=" contact__content-info-detail">
+                            <div class="contact__icon location">
+
+                                <ion-icon name="location-outline" class=""></ion-icon>
+                            </div>
+                            <div class="contact__info">
+                                <h3 class="contact__info-title jost">Location:</h3>
+                                <a class="space-mono" target="_blank" href="https://goo.gl/maps/7LzNHJuzeinNxzH36">Go
+                                    Vap, TP. Ho Chi Minh, Viet Nam</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__content-contact">
+                        <form action="" class="contact__form">
+                            <div class="contact__form-group">
+                                <input required type="text" class="contact__form-input" oninput="checkEmptyInput()">
+                                <span>Enter Your Name</span>
+                            </div>
+                            <div class="contact__form-group">
+                                <input required type="email" class="contact__form-input" oninput="checkEmptyInput()">
+                                <span>Enter Your Mail</span>
+                            </div>
+                            <div class="contact__form-group">
+                                <input required type="text" class="contact__form-input" oninput="checkEmptyInput()">
+                                <span>Enter Your Subject</span>
+                            </div>
+                            <div class="contact__form-group">
+                                <textarea required name="" id="" cols="30" rows="10" class="contact__form-input"
+                                    oninput="checkEmptyInput()"></textarea>
+                                <span>Enter Your Message</span>
+                            </div>
+                            <div class="contact__form-group">
+                                <button class="contact__form-btn">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </section>
+
     <footer class="footer"></footer>
 
 
@@ -159,6 +230,46 @@
         AOS.init({
             duration: 1200,
         });
+
+        checkEmptyInput = () => {
+            const inputs = document.querySelectorAll('.contact__form-input');
+            const span = document.querySelectorAll('.contact__form-input + span');
+            inputs.forEach((input, index) => {
+                if (input.value.trim() !== '') {
+                    span[index].style.visibility = 'hidden';
+
+                    if (input.type === 'email') {
+                        const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+                        if (!input.value.match(pattern)) {
+                            span[index].style.visibility = 'visible';
+                            span[index].innerHTML = 'Please enter a valid email';
+                            span[index].style.color = 'red';
+                            span[index].style.top = '-12px';
+                            input.style.border = '3px solid red';
+                        }
+                        else {
+                            span[index].style.visibility = 'hidden';
+                            input.style.border = null
+                        }
+                    }
+                }
+                else {
+                    span[index].style.visibility = 'visible';
+
+                    if (input.type === 'email') {
+                        span[index].innerHTML = 'Enter Your Mail';
+                        span[index].style.color = null
+                        span[index].style.top = null
+                        input.style.border = null
+                    }
+                }
+            })
+
+
+        }
+    </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
     </script>
 
 </body>
