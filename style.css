@@ -846,6 +846,10 @@ html {
   margin: 0;
 }
 
+.contact__info {
+  flex: 1;
+}
+
 .contact__info a {
   text-decoration: none;
   color: var(--white-color);
@@ -866,12 +870,15 @@ html {
 .contact__form-group:nth-child(1),
 .contact__form-group:nth-child(2) {
   display: inline-block;
+  width: 49.5%;
 }
 
 .contact__form-group span {
+  font-size: 1rem;
   position: absolute;
   top: 50%;
   left: 10px;
+  text-transform: none;
   transform: translateY(-50%);
 
   pointer-events: none;
@@ -1054,7 +1061,42 @@ html {
   }
 }
 
+/* footer */
+.footer {
+  padding: 2rem 0;
+  background-color: var(--dark-color);
+  border-top: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer h1 {
+  font-size: 2.5rem;
+}
+
+.footer span {
+  color: var(--white-color);
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer span ion-icon {
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  color: red;
+}
+
 @media screen and (max-width: 992px) {
+  .contact__form-group:nth-child(1),
+  .contact__form-group:nth-child(2) {
+    display: block;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1134,6 +1176,23 @@ html {
   #menu-bar:checked ~ .menu {
     transform: translateX(0);
   }
+
+  .contact__content {
+    flex-direction: column;
+  }
+
+  .contact__content-info {
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+  }
+
+  .contact__info-title {
+    font-size: 1rem;
+  }
+
+  .contact__info a {
+    font-size: 0.8rem;
+  }
 }
 @media screen and (max-width: 576px) {
   .home__img,
@@ -1149,5 +1208,9 @@ html {
   .skill__item {
     width: 150px;
     height: 150px;
+  }
+
+  .footer h1 {
+    font-size: 2rem;
   }
 }

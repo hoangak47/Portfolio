@@ -233,6 +233,7 @@ function main() {
   function sendEmail() {
     const btn = $(".contact__form-btn");
     const input = $$(".contact__form-input");
+    const spans = $$(".contact__form-group span");
     const textarea = $(".contact__form-group textarea");
 
     btn.addEventListener("click", (e) => {
@@ -259,6 +260,9 @@ function main() {
         }).then(createToast("success"));
 
         input.forEach((item) => (item.value = ""));
+        spans.forEach((item) => {
+          item.style.visibility = "visible";
+        });
       }
     });
 

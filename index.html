@@ -197,20 +197,20 @@
                         <form action="" class="contact__form">
                             <div class="contact__form-group">
                                 <input required type="text" class="contact__form-input" oninput="checkEmptyInput()">
-                                <span>Enter Your Name</span>
+                                <span class="jost">Enter Your Name</span>
                             </div>
                             <div class="contact__form-group">
                                 <input required type="email" class="contact__form-input" oninput="checkEmptyInput()">
-                                <span>Enter Your Mail</span>
+                                <span class="jost">Enter Your Mail</span>
                             </div>
                             <div class="contact__form-group">
                                 <input required type="text" class="contact__form-input" oninput="checkEmptyInput()">
-                                <span>Enter Your Subject</span>
+                                <span class="jost">Enter Your Subject</span>
                             </div>
                             <div class="contact__form-group">
                                 <textarea required name="" id="" cols="30" rows="10" class="contact__form-input"
                                     oninput="checkEmptyInput()"></textarea>
-                                <span>Enter Your Message</span>
+                                <span class="jost">Enter Your Message</span>
                             </div>
                             <div class="contact__form-group">
                                 <button class="contact__form-btn">Send</button>
@@ -221,7 +221,11 @@
             </div>
     </section>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <h1>Thanks for watching.</h1>
+        <br>
+        <span>© 2023 <ion-icon name="heart-outline"></ion-icon> coded by Nguyen Hoang</span>
+    </footer>
 
 
     <script src="main.js"></script>
@@ -251,7 +255,10 @@
                         }
                         else {
                             span[index].style.visibility = 'hidden';
-                            input.style.border = null
+                            input.style.border = null;
+                            span[index].innerHTML = 'Enter Your Mail';
+                            span[index].style.color = null;
+                            span[index].style.top = null;
                         }
                     }
                 }
@@ -259,9 +266,6 @@
                     span[index].style.visibility = 'visible';
 
                     if (input.type === 'email') {
-                        span[index].innerHTML = 'Enter Your Mail';
-                        span[index].style.color = null
-                        span[index].style.top = null
                         input.style.border = null
                     }
                 }
