@@ -251,14 +251,14 @@ function main() {
 
       if (name && email && subject && message) {
         Email.send({
-          Host: "smtp.elasticemail.com",
-          Username: "dinhnv391@gmail.com",
-          Password: "3C1880E1D765248DA65667E3D451738DA607",
-          To: "dinhnv391@gmail.com",
-          From: "nguyenhoang41911@gmail.com",
+          SecureToken: "1c1d5512-53cf-4c3a-9b36-7ef3bff5cab0",
+          To: "nguyenhoang41911@gmail.com",
+          From: "dinhnv391@gmail.com",
           Subject: subject,
           Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}`,
         }).then(createToast("success"));
+
+        input.forEach((item) => (item.value = ""));
       }
     });
 
