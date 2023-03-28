@@ -34,7 +34,7 @@ function main() {
     const about = $("#about");
     const skills = $("#skill");
     const projects = $("#my-works");
-    // const contact = $("#contact");
+    const contact = $("#contact");
 
     document.addEventListener("scroll", () => {
       const skills = $("#skill");
@@ -59,6 +59,12 @@ function main() {
           item.classList.remove("active");
         });
         nav[3].classList.add("active");
+      }
+      if (window.scrollY >= contact.offsetTop - 100) {
+        nav.forEach((item) => {
+          item.classList.remove("active");
+        });
+        nav[4].classList.add("active");
       }
     });
 
