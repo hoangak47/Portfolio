@@ -251,7 +251,9 @@ function main() {
 
       if (name && email && subject && message) {
         Email.send({
-          SecureToken: "76e2e51e-2190-4bdf-b588-b54d3e5df762",
+          Host: "smtp.elasticemail.com",
+          Username: "dinhnv391@gmail.com",
+          Password: "3C1880E1D765248DA65667E3D451738DA607",
           To: "dinhnv391@gmail.com",
           From: "nguyenhoang41911@gmail.com",
           Subject: subject,
