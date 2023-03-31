@@ -295,6 +295,7 @@ html {
   font-family: "Jost", sans-serif;
   margin-bottom: 1rem;
   position: relative;
+  text-align: center;
 }
 
 .home__description {
@@ -491,6 +492,7 @@ html {
   margin-bottom: 1rem;
   padding: 0.5rem 1rem;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .detail {
@@ -500,6 +502,7 @@ html {
   font-family: "jost", monospace;
   margin-bottom: 1rem;
   padding: 0.5rem 1rem;
+  text-align: justify;
 }
 
 .about__btn {
@@ -814,6 +817,10 @@ html {
   text-align: center;
 }
 
+.contact__title--content {
+  text-align: center;
+}
+
 .contact__content {
   display: flex;
   justify-content: space-between;
@@ -904,7 +911,7 @@ html {
 .contact__form-group:nth-child(1),
 .contact__form-group:nth-child(2) {
   display: inline-block;
-  width: 49.5%;
+  width: 49%;
 }
 
 .contact__form-group span {
