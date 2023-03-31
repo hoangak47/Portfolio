@@ -37,7 +37,6 @@ function main() {
     const contact = $("#contact");
 
     document.addEventListener("scroll", () => {
-      const skills = $("#skill");
       if (window.scrollY <= home.offsetTop) {
         nav.forEach((item) => {
           item.classList.remove("active");
@@ -108,7 +107,7 @@ function main() {
         technologies:
           " HTML/CSS/SCSS/JS, Reactjs, Reactjs hook, React context, Reactrouter-dom, Chart.js, Axios, Nodejs ( Expressjs).",
         function:
-          " Change theme, Skeleton, Song control ( including: play, pause, next, previous, random, loop), Volum control, Control the time to play music,...",
+          "Change theme, Skeleton, Song control ( including: play, pause, next, previous, random, loop), Volum control, Control the time to play music,...",
       },
       {
         name: "Chat-app",
@@ -148,6 +147,15 @@ function main() {
         teamSize: 1,
         technologies: " HTML/CSS/JS",
         function: " Responsive, Animation,..",
+      },
+      {
+        name: "Timer",
+        img: "./images/Timer.PNG",
+        linkLive: "https://time-hoangak47.vercel.app/",
+        linkCode: "https://github.com/hoangak47/Time",
+        teamSize: 1,
+        technologies: "HTML/CSS/SCSS/JS, Reactjs, Antd",
+        function: "Run Time, Animation,..",
       },
     ];
 
