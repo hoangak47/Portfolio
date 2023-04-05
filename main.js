@@ -159,7 +159,7 @@ function main() {
       },
       {
         name: "Weather",
-        img: "./images/Weather.PNG",
+        img: "./images/Weather.png",
         linkLive: "https://weather-six-omega.vercel.app/",
         linkCode: "https://github.com/hoangak47/weather",
         teamSize: 1,
