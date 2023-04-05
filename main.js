@@ -157,6 +157,16 @@ function main() {
         technologies: "HTML/CSS/SCSS/JS, Reactjs, Antd",
         function: "Run Time, Animation,..",
       },
+      {
+        name: "Weather",
+        img: "./images/Weather.PNG",
+        linkLive: "https://weather-six-omega.vercel.app/",
+        linkCode: "https://github.com/hoangak47/weather",
+        teamSize: 1,
+        technologies: "HTML/SCSS/JS, Reactjs, Axios, Redux, Redux Toolkit.",
+        function:
+          "View Temperature, Humidity, Wind Speed, View Weather By Search Location,..",
+      },
     ];
 
     const projectContainer = $(".project-list");
