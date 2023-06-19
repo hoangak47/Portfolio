@@ -167,6 +167,17 @@ function main() {
         function:
           "View Temperature, Humidity, Wind Speed, View Weather By Search Location,..",
       },
+      {
+        name: "HCode shop",
+        img: "./images/HCode_shop.png",
+        linkLive: "https://hcode-shop.vercel.app/",
+        linkCode: "https://github.com/hoangak47/hcode-shop",
+        teamSize: 1,
+        technologies:
+          "HTML/SCSS/JS, Reactjs, Axios, Redux, Redux Toolkit, MongoDB, Nodejs ( Expressjs), Antd.",
+        function:
+          "View Product, Add to cart, Payment, Login, Register, View Order, View User, Update Password,...",
+      },
     ];
 
     const projectContainer = $(".project-list");
