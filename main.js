@@ -142,7 +142,7 @@ function main() {
       {
         name: "Portfolio",
         img: "./images/Portfolio.PNG",
-        linkLive: "https://portfolio-hoangak47.vercel.app/",
+        linkLive: "https://portfolio-hcodedev.vercel.app/",
         linkCode: "https://github.com/hoangak47/Portfolio",
         teamSize: 1,
         technologies: " HTML/CSS/JS",
