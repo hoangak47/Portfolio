@@ -178,6 +178,17 @@ function main() {
         function:
           "View Product, Add to cart, Payment, Login, Register, View Order, View User, Update Password,...",
       },
+      {
+        name: "HCode Anime",
+        img: "./images/CNAnimation.png",
+        linkLive: "https://hcode-anime.vercel.app/",
+        linkCode: "https://github.com/hoangak47/HCode.Anime",
+        teamSize: 1,
+        technologies:
+          "HTML/SCSS/JS, Tailwind, Reactjs, Axios, Redux, Redux Toolkit,  Nodejs ( Expressjs).",
+        function:
+          "View Anime, View Episode, View Anime By Category, View Anime By Search, View Anime by day, View detail Anime, Top view,...",
+      },
     ];
 
     const projectContainer = $(".project-list");
