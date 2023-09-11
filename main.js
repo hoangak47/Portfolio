@@ -110,6 +110,37 @@ function main() {
           "Change theme, Skeleton, Song control ( including: play, pause, next, previous, random, loop), Volum control, Control the time to play music,...",
       },
       {
+        name: "HCode shop",
+        img: "./images/HCode_shop.png",
+        linkLive: "https://hcode-shop.vercel.app/",
+        linkCode: "https://github.com/hoangak47/hcode-shop",
+        teamSize: 1,
+        technologies:
+          "HTML/SCSS/JS, Reactjs, Axios, Redux, Redux Toolkit, MongoDB, Nodejs ( Expressjs), Antd.",
+        function:
+          "View Product, Add to cart, Payment, Login, Register, View Order, View User, Update Password,...",
+      },
+      {
+        name: "HCode Anime",
+        img: "./images/CNAnimation.png",
+        linkLive: "https://hcode-anime.vercel.app/",
+        linkCode: "https://github.com/hoangak47/HCode.Anime",
+        teamSize: 1,
+        technologies:
+          "HTML/SCSS/JS, Tailwind, Reactjs, Axios, Redux, Redux Toolkit,  Nodejs ( Expressjs).",
+        function:
+          "View Anime, View Episode, View Anime By Category, View Anime By Search, View Anime by day, View detail Anime, Top view,...",
+      },
+      {
+        name: "Portfolio",
+        img: "./images/Portfolio.PNG",
+        linkLive: "https://portfolio-hcodedev.vercel.app/",
+        linkCode: "https://github.com/hoangak47/Portfolio",
+        teamSize: 1,
+        technologies: " HTML/CSS/JS",
+        function: " Responsive, Animation,..",
+      },
+      {
         name: "Chat-app",
         img: "./images/chat_app.PNG",
         linkLive: "https://chat-app-fca21.web.app/",
@@ -140,15 +171,6 @@ function main() {
         function: " Responsive, Animation,..",
       },
       {
-        name: "Portfolio",
-        img: "./images/Portfolio.PNG",
-        linkLive: "https://portfolio-hcodedev.vercel.app/",
-        linkCode: "https://github.com/hoangak47/Portfolio",
-        teamSize: 1,
-        technologies: " HTML/CSS/JS",
-        function: " Responsive, Animation,..",
-      },
-      {
         name: "Timer",
         img: "./images/Timer.PNG",
         linkLive: "https://time-hoangak47.vercel.app/",
@@ -166,28 +188,6 @@ function main() {
         technologies: "HTML/SCSS/JS, Reactjs, Axios, Redux, Redux Toolkit.",
         function:
           "View Temperature, Humidity, Wind Speed, View Weather By Search Location,..",
-      },
-      {
-        name: "HCode shop",
-        img: "./images/HCode_shop.png",
-        linkLive: "https://hcode-shop.vercel.app/",
-        linkCode: "https://github.com/hoangak47/hcode-shop",
-        teamSize: 1,
-        technologies:
-          "HTML/SCSS/JS, Reactjs, Axios, Redux, Redux Toolkit, MongoDB, Nodejs ( Expressjs), Antd.",
-        function:
-          "View Product, Add to cart, Payment, Login, Register, View Order, View User, Update Password,...",
-      },
-      {
-        name: "HCode Anime",
-        img: "./images/CNAnimation.png",
-        linkLive: "https://hcode-anime.vercel.app/",
-        linkCode: "https://github.com/hoangak47/HCode.Anime",
-        teamSize: 1,
-        technologies:
-          "HTML/SCSS/JS, Tailwind, Reactjs, Axios, Redux, Redux Toolkit,  Nodejs ( Expressjs).",
-        function:
-          "View Anime, View Episode, View Anime By Category, View Anime By Search, View Anime by day, View detail Anime, Top view,...",
       },
     ];
 
