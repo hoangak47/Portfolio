@@ -99,10 +99,10 @@ function main() {
   function createProject() {
     const projects = [
       {
-        name: "Zing MP3 Clone",
+        name: "HCODE ZING",
         img: "./images/zing.PNG",
-        linkLive: "https://zingmp3-indol.vercel.app/",
-        linkCode: "https://github.com/hoangak47/zingmp3_clone",
+        linkLive: "https://hcode-zing.vercel.app/",
+        linkCode: "https://github.com/hoangak47/HCode.Zing",
         teamSize: 1,
         technologies:
           " HTML/CSS/SCSS/JS, Reactjs, Reactjs hook, React context, Reactrouter-dom, Chart.js, Axios, Nodejs ( Expressjs).",
